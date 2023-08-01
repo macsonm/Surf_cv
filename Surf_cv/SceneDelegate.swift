@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  Surf_cv
-//
-//  Created by Maxim M on 01.08.2023.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

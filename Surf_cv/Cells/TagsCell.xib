@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TagsCell" rowHeight="181" id="oBy-pp-QDJ" customClass="TagsCell" customModule="testApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="181"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oBy-pp-QDJ" id="Uxq-RQ-0wb">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="181"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HwD-LO-7Ew" customClass="TagListView" customModule="testApp" customModuleProvider="target">
+                        <rect key="frame" x="16" y="0.0" width="288" height="157"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
+                                <color key="value" red="0.95294117649999999" green="0.95294117649999999" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                <color key="value" red="0.19215686269999999" green="0.19215686269999999" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableRemoveButton" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="removeButtonIconSize">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="removeIconLineColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="HwD-LO-7Ew" secondAttribute="trailing" constant="16" id="4UM-Bv-RwM"/>
+                    <constraint firstItem="HwD-LO-7Ew" firstAttribute="leading" secondItem="Uxq-RQ-0wb" secondAttribute="leading" constant="16" id="8KL-S1-kNj"/>
+                    <constraint firstItem="HwD-LO-7Ew" firstAttribute="top" secondItem="Uxq-RQ-0wb" secondAttribute="top" id="ImY-RQ-Efv"/>
+                    <constraint firstAttribute="bottom" secondItem="HwD-LO-7Ew" secondAttribute="bottom" constant="24" id="eFe-ja-hjX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="9NR-Xl-ADg"/>
+            <connections>
+                <outlet property="tagListView" destination="HwD-LO-7Ew" id="khl-SC-16J"/>
+            </connections>
+            <point key="canvasLocation" x="129.7709923664122" y="56.690140845070424"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
