@@ -51,6 +51,11 @@
             <point key="canvasLocation" x="129.7709923664122" y="56.690140845070424"/>
         </tableViewCell>
     </objects>
+    <designables>
+        <designable name="HwD-LO-7Ew">
+            <size key="intrinsicContentSize" width="288" height="16"/>
+        </designable>
+    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
